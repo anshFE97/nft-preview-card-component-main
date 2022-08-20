@@ -1,0 +1,142 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    width: 100%;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 3rem auto;
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 1rem;
+}
+
+
+.container article:first-child {
+    position: relative;
+    width: 90%;
+    margin: 1.5rem 0 1.5rem 1rem;
+}
+
+.container article:first-child .cube {
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.container article:first-child div {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 55%);
+    top: 0;
+    width: 100%;
+    height: calc(100% - 4px);
+    opacity: 0;
+    border-radius: 0.8rem;
+}
+
+.container article:first-child div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container article:first-child div:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+
+.container h2 {
+    color: hsl(0, 0%, 100%);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.container p {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.container ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.container ul li {
+    display: flex;
+}
+
+.container ul li:first-child {
+    color: hsl(178, 100%, 50%);
+}
+
+.container ul li img {
+    padding-right: 7px;
+}
+
+
+.container .avatar {
+    padding-left: 1rem;
+    padding-bottom: 1rem;;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container .avatar img {
+    width: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.container .avatar p {
+    margin-top: 0.8rem;
+}
+
+.container .avatar p span {
+    color:hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+.container .avatar p span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+      
+.attribution { 
+    margin-top: -2rem;
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+     color: hsl(228, 45%, 44%);  
+ }
